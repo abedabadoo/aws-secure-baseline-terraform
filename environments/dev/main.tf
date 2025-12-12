@@ -15,3 +15,22 @@ module "vpc" {
   project_name = var.project_name
   environment  = var.environment
 }
+
+module "config" {
+  source = "../../modules/config"
+
+  project_name = var.project_name
+  environment  = var.environment
+}
+
+# module "securityhub" {
+#   source = "../../modules/securityhub"
+# }
+
+module "iam_baseline" {
+  source = "../../modules/iam_baseline"
+
+  project_name = var.project_name
+  environment  = var.environment
+  mfa_required = true
+}

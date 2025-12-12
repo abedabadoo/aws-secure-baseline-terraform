@@ -18,3 +18,7 @@ This repo builds a secure-by-default AWS baseline using Terraform.
 cd environments/dev
 terraform init
 terraform plan
+
+## Security Hub
+Security Hub is intentionally not enabled via Terraform in this repo when using
+root credentials. AWS requires an IAM user or role with billing subscription access.
