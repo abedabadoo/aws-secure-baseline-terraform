@@ -1,8 +1,15 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
 # Terraform
+.terraform/
 **/.terraform/*
 *.tfstate
+*.tfstate.backup
 *.tfstate.*
 *.tfvars
+*.tfplan
 crash.log
 override.tf
 override.tf.json
@@ -13,4 +20,3 @@ override.tf.json
 # Editor
 .vscode/
 .idea/
-.DS_Store
