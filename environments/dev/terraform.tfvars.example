@@ -1,3 +1,11 @@
+# Copy this file to terraform.tfvars and fill in real values.
+# terraform.tfvars is gitignored so secrets/IDs do not leak.
+
+# AWS region to deploy the baseline into.
 aws_region   = "us-east-1"
+
+# Project name prefix applied to resource names/tags.
 project_name = "secure-baseline"
+
+# Environment name (dev / stage / prod). Drives tagging and naming.
 environment  = "dev"
